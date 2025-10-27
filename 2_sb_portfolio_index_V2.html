@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joel Carmona — eLearning Developer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      background: #0077cc;
+    }
+    .tabs button {
+      flex: 1;
+      padding: 14px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .tabs button.active {
+      background: #00aa88;
+    }
+    .tab-content {
+      display: none;
+      padding: 20px 0;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    td {
+      vertical-align: top;
+      padding: 10px;
+    }
+    .placeholder {
+      width: 100%;
+      height: 200px;
+      background-color: #ccc;
+      text-align: center;
+      line-height: 200px;
+      color: #333;
+      font-weight: bold;
+    }
+    .two-column td {
+      width: 50%;
+    }
+    h2 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="tabs">
+    <button class="tablink active" onclick="openTab(event, 'Home')">Home</button>
+    <button class="tablink" onclick="openTab(event, 'About')">About</button>
+    <button class="tablink" onclick="openTab(event, 'Skills')">Skills</button>
+    <button class="tablink" onclick="openTab(event, 'Experience')">Experience</button>
+    <button class="tablink" onclick="openTab(event, 'SampleWorks')">Sample Works</button>
+    <button class="tablink" onclick="openTab(event, 'CaseStudies')">Case Studies</button>
+    <button class="tablink" onclick="openTab(event, 'Testimonials')">Testimonials</button>
+  </div>
+
+  <div id="Home" class="tab-content active">
+  <h2>Home</h2>
+  <div style="display: flex; width: 100%;">
+    <div style="width: 50%; padding-right: 10px;">
+      <p><strong>Joel Carmona — eLearning Developer & Instructional Designer</strong><br>
+      Laguna, Philippines</p>
+      <p>As an eLearning Developer and Instructional Designer, I specialize in crafting engaging, tech-driven learning experiences...</p>
+      <p>“Let’s give something back to nature before it takes everything back from us.”</p>
+    </div>
+    <div style="width: 50%; padding-left: 10px;">
+      <div class="placeholder">Image Placeholder</div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="About" class="tab-content">
+  <h2>About</h2>
+  <div style="display: flex; width: 100%;">
+    <div style="width: 50%; padding-right: 10px;">
+      <div class="placeholder">Image Placeholder</div>
+    </div>
+    <div style="width: 50%; padding-left: 10px;">
+      <p>My path into eLearning wasn’t linear—it started with code. As a Junior Developer, I immersed myself in HTML, CSS, and JavaScript...</p>
+      <p>Today, I bring a collaborative mindset to every project... always asking: how can this be clearer, kinder, and more effective for the learner</p>
+    </div>
+  </div>
+</div>
+
+
+  <div id="Skills" class="tab-content">
+    <h2>Skills</h2>
+    <p>I specialize in building high-impact learning experiences that merge instructional clarity with technical precision...</p>
+  </div>
+
+  <div id="Experience" class="tab-content">
+    <h2>Experience</h2>
+    <p>With over a decade of experience in eLearning and development, I’ve led the design and delivery of impactful learning solutions...</p>
+  </div>
+
+  <div id="SampleWorks" class="tab-content">
+    <h2>Sample Works</h2>
+    <table class="two-column">
+      <tr>
+        <td>
+          <p><strong>Around the World with South Bird</strong><br>
+          Tool: Articulate Storyline<br>
+          Focus: Gamification, Animation, JavaScript Integration</p>
+          <div class="placeholder">Image Placeholder</div>
+        </td>
+        <td>
+          <p><strong>Software Simulation</strong><br>
+          Tool: Adobe Captivate<br>
+          Focus: Guided Practice, System Navigation</p>
+          <div class="placeholder">Image Placeholder</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><strong>Software Simulation</strong><br>
+          Tool: Articulate Storyline or Adobe Captivate<br>
+          Focus: System navigation/walkthrough, onboarding, product training</p>
+          <div class="placeholder">Image Placeholder</div>
+        </td>
+        <td>
+          <p><strong>Scenario-Based Storyline Course</strong><br>
+          Tool: Articulate Storyline<br>
+          Focus: High-Volume Content, Scenario Design, Rapid Development</p>
+          <div class="placeholder">Image Placeholder</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="CaseStudies" class="tab-content">
+    <h2>Case Studies & Process</h2>
+    <p><strong>Workday eLearning Landing Page</strong><br>
+    This web-based application was designed to deliver targeted microlearning modules...</p>
+  </div>
+
+  <div id="Testimonials" class="tab-content">
+    <h2>Testimonials</h2>
+    <table>
+      <tr>
+        <td><div class="placeholder">Testimonial Placeholder</div></td>
+        <td><div class="placeholder">Testimonial Placeholder</div></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script>
+  function openTab(evt, tabName) {
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(c => c.classList.remove('active'));
+    document.getElementById(tabName).classList.add('active');
+
+    const tabs = document.querySelectorAll('.tablink');
+    tabs.forEach(t => t.classList.remove('active'));
+    evt.currentTarget.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
