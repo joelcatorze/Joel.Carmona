@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joel Carmona — eLearning Developer</title>
+    <style>
+        /*body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+        }*/
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 600;
+            color: #0d6efd;
+        }
+
+
+
+
+
+
+        body {
+            background-color: #ffffff;
+            background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+
+
+            /*background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");*/
+
+            /* Good one
+            background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');*/
+            line-height: 1.4;
+            color: #000000;
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            height: 100vh
+        }
+
+        .tabs {
+            display: flex;
+            background: #0077cc;
+        }
+
+        .tabs button {
+            flex: 1;
+            padding: 14px;
+            background: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .tabs button.active {
+            background: #00aa88;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 24px;
+
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        td {
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        .placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 200px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .two-column td {
+            width: 50%;
+        }
+
+        blockquote {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #0d6efd;
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            color: #0d6efd;
+            font-style: italic;
+        }
+
+        blockquote::before {
+            content: "❝";
+            font-size: 32px;
+            color: #0d6efd;
+            margin-right: 10px;
+        }
+
+        blockquote cite {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            color: #0d6efd;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablink" onclick="openTab(event, 'About')">About</button>
+            <button class="tablink" onclick="openTab(event, 'Skills')">Skills</button>
+            <button class="tablink" onclick="openTab(event, 'Experience')">Experience</button>
+            <button class="tablink" onclick="openTab(event, 'SampleWorks')">Sample Works</button>
+            <button class="tablink" onclick="openTab(event, 'CaseStudies')">Case Studies</button>
+            <button class="tablink" onclick="openTab(event, 'Testimonials')">Testimonials</button>
+        </div>
+
+        <!--
+        ===========
+        HOME
+        ===========
+        -->
+        <div id="Home" class="tab-content active">
+            <h2>Home</h2>
+            <div style="display: flex; width: 100%;">
+                <div style="width: 50%; padding-right: 10px;">
+                    <h3 style="margin:8px 0px 0px 0px;">Joel Carmona — eLearning Developer & Instructional Designer</h3>
+                    <p style="margin-top:0px">Laguna, Philippines</p>
+
+
+                    <p>As an eLearning Developer and Instructional Designer, I specialize in crafting engaging, tech-driven learning experiences that blend instructional clarity with creative design. With a strong foundation in digital education and a passion for purposeful storytelling, I transform complex concepts into accessible, learner-centered content that resonates across platforms.</p>
+
+                    <p>My approach is rooted in both innovation and empathy—balancing technical precision with human connection to ensure every module, course, or resource supports meaningful growth. Whether collaborating with teams or working independently, I bring a proactive mindset and a commitment to excellence in every phase of development.</p>
+
+                    <p>Beyond the workspace, I’m a proud father who finds balance through sports like billiards, table tennis, and basketball—activities that keep me energized and focused. This blend of creativity, discipline, and play informs my work and fuels my drive to create impactful learning solutions.</p>
+
+
+
+                    <blockquote>Let’s give something back to nature before it takes everything back from us.
+                        <cite>— Earth</cite>
+                    </blockquote>
+
+                </div>
+                <div style="width: 50%; padding-left: 10px;">
+                    <div class="placeholder"><img src="img/MAIN.png" style="width: 100%;  height: auto;  display: block;" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="About" class="tab-content">
+            <h2>About</h2>
+            <div style="display: flex; width: 100%;">
+                <div style="width: 50%; padding-right: 10px;">
+                    <div class="placeholder"><img src="img/ABOUT_V2.png" style="width: 100%;  height: auto;  display: block;" /></div>
+                </div>
+                <div style="width: 50%; padding-left: 10px;">
+
+                    <p style="margin-top:8px;">My path into eLearning wasn’t linear—it started with code. As a Junior Developer, I immersed myself in HTML, CSS, and JavaScript, building digital systems and learning how structure shapes experience. But the more I worked behind the scenes, the more I realized my real passion was helping people learn—not just through clean interfaces, but through meaningful, intuitive design.</p>
+
+                    <p>That realization led me into instructional design, where I could blend technical know-how with human-centered storytelling. I began crafting interactive modules and simulations that didn’t just deliver content—they invited learners to explore, reflect, and apply. Over time, I’ve worked across industries—from medical and dental to pharmaceutical, educational, and vocational—each one sharpening my ability to translate complex ideas into accessible, engaging learning experiences.</p>
+
+                    <p>Today, I bring a collaborative mindset to every project, refining UI labels for multilingual teams, mapping workflows with accessibility in mind, and always asking: how can this be clearer, kinder, and more effective for the learner</p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Skills" class="tab-content">
+            <h2>Skills</h2>
+
+            <p>I specialize in building high-impact learning experiences that merge instructional clarity with technical precision. My toolkit includes industry-standard authoring platforms like Articulate Storyline, Adobe Captivate, and Rise—paired with front-end skills in HTML, CSS, and JavaScript to customize content and integrate seamlessly with LMS platforms such as Canvas and Moodle.</p>
+
+            <p>Beyond functionality, I bring a strong visual design sensibility to every project. Using tools like Photoshop, Premiere, and Figma, I craft media-rich course elements that elevate engagement and accessibility. Whether I’m prototyping a simulation, refining UI for multilingual learners, or designing responsive layouts, I focus on delivering learning that’s intuitive, inclusive, and visually compelling.</p>
+
+            <h3>Proficiencies in Tools and Technologies</h3>
+            <div style="width: 100%; ">
+                <img src="img/Tools_v1.svg" style="width: 100%;  height: auto;  display: block;" />
+            </div>
+
+        </div>
+
+        <div id="Experience" class="tab-content">
+            <h2>Experience</h2>
+            <p>With over a decade of experience in eLearning and development, I’ve led the design and delivery of impactful learning solutions...</p>
+        </div>
+
+        <div id="SampleWorks" class="tab-content">
+            <h2>Sample Works</h2>
+            <table class="two-column">
+                <tr>
+                    <td>
+                        <p><strong>Around the World with South Bird</strong><br>
+                            Tool: Articulate Storyline<br>
+                            Focus: Gamification, Animation, JavaScript Integration</p>
+                        <div class="placeholder">Image Placeholder</div>
+                    </td>
+                    <td>
+                        <p><strong>Software Simulation</strong><br>
+                            Tool: Adobe Captivate<br>
+                            Focus: Guided Practice, System Navigation</p>
+                        <div class="placeholder">Image Placeholder</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Software Simulation</strong><br>
+                            Tool: Articulate Storyline or Adobe Captivate<br>
+                            Focus: System navigation/walkthrough, onboarding, product training</p>
+                        <div class="placeholder">Image Placeholder</div>
+                    </td>
+                    <td>
+                        <p><strong>Scenario-Based Storyline Course</strong><br>
+                            Tool: Articulate Storyline<br>
+                            Focus: High-Volume Content, Scenario Design, Rapid Development</p>
+                        <div class="placeholder">Image Placeholder</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="CaseStudies" class="tab-content">
+            <h2>Case Studies & Process</h2>
+            <p><strong>Workday eLearning Landing Page</strong><br>
+                This web-based application was designed to deliver targeted microlearning modules...</p>
+        </div>
+
+        <div id="Testimonials" class="tab-content">
+            <h2>Testimonials</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="placeholder">Testimonial Placeholder</div>
+                    </td>
+                    <td>
+                        <div class="placeholder">Testimonial Placeholder</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(c => c.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+
+            const tabs = document.querySelectorAll('.tablink');
+            tabs.forEach(t => t.classList.remove('active'));
+            evt.currentTarget.classList.add('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
